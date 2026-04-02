@@ -7,7 +7,19 @@ export const DEMO_CONVERSATIONS = {
         "Translate 'good morning' to Chickasaw",
       ],
       response: {
-        text: `**Chokma! (jók-mah)**\n\nThis is the Chickasaw word for "Hello" — and it carries more meaning than a simple greeting. It conveys well-being and goodwill.\n\nTo say **"Hello, how are you?"**:\n\n**Chokma, chinchokma?**\n*(jók-mah, chin-jók-mah)*\n\nLiteral meaning: "Good, are you good?"\n\nThe response would be:\n**Achokma, chinchokma?**\n*(ah-jók-mah, chin-jók-mah)*\n"I am good, are you good?"`,
+        text: `Chokma! (jók-mah)
+
+This is the Chickasaw word for "Hello."
+
+To say "Hello, how are you?" you can use:
+
+Chokma, chinchokma?
+(jók-mah, chin-jók-mah)
+
+A response would be:
+
+Achokma.
+(ah-jók-mah)`,
         audio: true,
         phrases: [
           { chickasaw: "Chokma", english: "Hello / It is good", pronunciation: "jók-mah" },
@@ -17,23 +29,57 @@ export const DEMO_CONVERSATIONS = {
         ],
       },
     },
+  ],
+  health: [
     {
       prompts: [
-        "Tell me about the Chickasaw number system",
-        "How do I count in Chickasaw?",
-        "Numbers in Chikashshanompa'",
+        "What preventive care should I get?",
+        "Show my health dashboard",
       ],
       response: {
-        text: `**Chickasaw Numbers — Holhtina'**\n\nThe Chickasaw number system is base-ten. Here are the foundational numbers:\n\n**1** — Chaffa *(CHAHF-fah)*\n**2** — Toklo *(TOHK-loh)*\n**3** — Tochchí'na *(tohch-CHEE-nah)*\n**4** — Oshta' *(OHSH-tah)*\n**5** — Talhlhá'pi *(tahl-HLAH-pee)*\n\nThe numbers 6–9 build upon these roots. The word for ten is **Pokkó'li** *(pohk-KOH-lee)*.\n\nWould you like to practice counting with an interactive exercise?`,
-        audio: true,
-        phrases: [
-          { chickasaw: "Chaffa", english: "One", pronunciation: "CHAHF-fah" },
-          { chickasaw: "Toklo", english: "Two", pronunciation: "TOHK-loh" },
-          { chickasaw: "Tochchí'na", english: "Three", pronunciation: "tohch-CHEE-nah" },
-          { chickasaw: "Oshta'", english: "Four", pronunciation: "OHSH-tah" },
-          { chickasaw: "Talhlhá'pi", english: "Five", pronunciation: "tahl-HLAH-pee" },
-        ],
+        text: `Your Preventive Care Summary
+
+Recommended:
+• Annual blood panel
+• Blood pressure monitoring
+• Diabetes screening
+• Vision screening
+
+All records remain on Nation-controlled infrastructure.`,
+        dashboard: true,
       },
+    },
+  ],
+  citizen: [
+    {
+      prompts: [
+        "How do I apply for housing assistance?",
+        "What benefits am I eligible for?",
+      ],
+      response: {
+        text: `Chickasaw Nation Housing Assistance
+
+Available programs may include:
+1. Home Loan Program
+2. Down Payment Assistance
+3. Home Repair & Rehabilitation
+4. Rental Assistance`,
+        actions: ["Start Pre-Qualification", "Find Nearest Office", "Download Application"],
+      },
+    },
+  ],
+  cultural: [
+    {
+      prompts: [
+        "Tell me about Chickasaw history",
+        "Show cultural knowledge content",
+      ],
+      response: {
+        text: `The Chickasaw Nation has a rich history, strong governance traditions, and a deep commitment to language and cultural preservation.`,
+      },
+    },
+  ],
+}
     },
   ],
   health: [
